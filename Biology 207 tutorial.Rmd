@@ -4,7 +4,9 @@ output: html_document
 ---
 
 
-```{r Importing Data}
+```{r Importing and Looking at the Data}
 library(readxl)
-FiberLengthFleeceWeight <- read_excel("Biol207TutorialData.xlsx")
+FiberLengthFleeceWeight <- read_excel("Biol207TutorialDataset.xlsx")
+View(FiberLengthFleeceWeight)
+summary(FiberLengthFleeceWeight)
 ```
