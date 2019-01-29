@@ -10,3 +10,38 @@ FiberLengthFleeceWeight <- read_excel("Biol207TutorialDataset.xlsx")
 View(FiberLengthFleeceWeight)
 summary(FiberLengthFleeceWeight)
 ```
+```{r}
+install.packages("ggplot2", repos='http://cran.us.r-project.org')
+library(ggplot2)
+install.packages("cowplot", repos='http://cran.us.r-project.org')
+library(cowplot)
+install.packages("UsingR", repos='http://cran.us.r-project.org')
+library(UsingR)
+```
+```{r}
+simple.eda(Biol207TutorialDataset$`Fiber length (cm)`)
+shapiro.test(Biol207TutorialDataset$`Fiber length (cm)`)
+simple.eda(Biol207TutorialDataset$`Fleece weight (kg)`)
+shapiro.test(Biol207TutorialDataset$`Fleece weight (kg)`)
+```
+
+
+
+```{r}
+library(ggplot2)
+library(cowplot)
+
+ggplot(Biol207TutorialDataset) +
+  aes(x = as.numeric(Biol207TutorialDataset$`Fiber length (cm)`), y = Biol207TutorialDataset$`Fleece weight (kg)`) +
+  geom_jitter(na.rm=TRUE) +
+  theme_cowplot() +
+  xlab("Fiber length (cm)") + 
+  ylab("Fleece weight (kg)")
+
+```
+
+```{r}
+fit = lm(Biol207TutorialDataset$`Fleece weight (kg)`~Biol207TutorialDataset$`Fiber length (cm)`, data=Biol207TutorialDataset)
+summary(fit)
+```
+
