@@ -12,10 +12,10 @@ summary(FiberLengthFleeceWeight)
 ```
 ```{r}
 install.packages("ggplot2", repos='http://cran.us.r-project.org')
-library(ggplot2)
 install.packages("cowplot", repos='http://cran.us.r-project.org')
-library(cowplot)
 install.packages("UsingR", repos='http://cran.us.r-project.org')
+library(ggplot2)
+library(cowplot)
 library(UsingR)
 ```
 ```{r}
