@@ -4,3 +4,7 @@ output: html_document
 ---
 
 
+```{r Importing Data}
+library(readxl)
+FiberLengthFleeceWeight <- read_excel("Biol207TutorialData.xlsx")
+```
