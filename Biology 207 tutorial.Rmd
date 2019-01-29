@@ -32,11 +32,11 @@ library(ggplot2)
 library(cowplot)
 
 ggplot(Biol207TutorialDataset) +
-  aes(x = as.numeric(Biol207TutorialDataset$`Fiber Length (cm)`), y = Biol207TutorialDataset$`Fleece Weight (kg)`) +
+  aes(x = as.numeric(Biol207TutorialDataset$`Fiber length (cm)`), y = Biol207TutorialDataset$`Fleece weight (kg)`) +
   geom_jitter(na.rm=TRUE) +
   theme_cowplot() +
-  xlab("Fiber length (cm)") + 
-  ylab("Fleece weight (kg)")
+  xlab("Fiber Length (cm)") + 
+  ylab("Fleece Weight (kg)")
 
 ```
 
