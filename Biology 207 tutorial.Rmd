@@ -28,16 +28,12 @@ shapiro.test(Biol207TutorialDataset$`Fleece weight (kg)`)
 
 
 ```{r}
-library(ggplot2)
-library(cowplot)
-
 ggplot(Biol207TutorialDataset) +
   aes(x = as.numeric(Biol207TutorialDataset$`Fiber length (cm)`), y = Biol207TutorialDataset$`Fleece weight (kg)`) +
   geom_jitter(na.rm=TRUE) +
   theme_cowplot() +
   xlab("Fiber Length (cm)") + 
   ylab("Fleece Weight (kg)")
-
 ```
 
 ```{r}
