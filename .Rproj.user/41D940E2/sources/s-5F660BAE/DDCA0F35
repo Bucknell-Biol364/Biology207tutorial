@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548788904456.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3357381140",
+    "id" : "DDCA0F35",
+    "lastKnownWriteTime" : 1549392376,
+    "last_content_update" : 1549392379620,
+    "path" : "~/Documents/Biology207tutorial/Biology 207 tutorial.Rmd",
+    "project_path" : "Biology 207 tutorial.Rmd",
+    "properties" : {
+        "cursorPosition" : "34,30",
+        "scrollLine" : "86"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

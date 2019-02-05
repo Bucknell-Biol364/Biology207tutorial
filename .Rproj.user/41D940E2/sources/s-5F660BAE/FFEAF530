@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548790421926.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FFEAF530",
+    "lastKnownWriteTime" : 8030604583819504737,
+    "last_content_update" : 1548790421926,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7B239811",
+        "caption" : "FiberLengthFleeceWeight",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=FiberLengthFleeceWeight&cache_key=7B239811",
+        "displayedObservations" : 8,
+        "environment" : "",
+        "object" : "FiberLengthFleeceWeight",
+        "preview" : 0,
+        "totalObservations" : 8,
+        "variables" : 2
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
