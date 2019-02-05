@@ -1,6 +1,0 @@
-"0","ggplot(Biol207TutorialDataset) +"
-"0","  aes(x = as.numeric(Biol207TutorialDataset$`Fiber length (cm)`), y = Biol207TutorialDataset$`Fleece weight (kg)`) +"
-"0","  geom_jitter(na.rm=TRUE) +"
-"0","  theme_cowplot() +"
-"0","  xlab(""Fiber Length (cm)"") + "
-"0","  ylab(""Fleece Weight (kg)"")"
