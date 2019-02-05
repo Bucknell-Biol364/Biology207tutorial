@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid1\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid101\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid201\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid301\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid401\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\})}{\leveltext\leveltemplateid501\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww25400\viewh13580\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 Making Files in R Studio:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\fs24 \cf0 {\listtext	1)	}\'93Welcome to our tutorial on using R for data analysis. By the end of this series of tutorials, you will be able to use RStudio to determine the correlation coefficient for a set of data on fiber length and fleece weight.\'94\
+{\listtext	2)	}\'93The first thing we need to do is create a folder where we will save all of our work.\'94 (create a folder for the sake of the video)\
+{\listtext	3)	}\'93Now we will launch RStudio and create a new R Markdown file where we will be doing our data analysis. To do this, choose the \'93file\'94 option in the top ribbon, then hover over the \'93New File\'94 option and choose \'93R Markdown\'85\'94. Give your file a title, for this tutorial we will call our file \'93Biology 207 Tutorial\'94, but we encourage you to choose a more descriptive name that describes what analysis we are performing. We will choose our output to be an html file, then hit create file. Once you have the file open, feel free to delete all of the sample code that RStudio puts in there by default.\'94\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+
+\fs28 Code Chunk 1: Reading in and Viewing Data in R Studio\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\fs24 \cf0 {\listtext	1)	}\'93First we will look at how you import and view a dataset\'94\
+{\listtext	2)	}**Go to the excel sheet with our dataset**\
+{\listtext	3)	}\'93This is our excel sheet with the data we are going to explore. We will save this sheet in the same folder that we created our r markdown file in. Then we will import the data into R Studio.\'94\
+{\listtext	4)	}**Go back to R Studio**\
+{\listtext	5)	}\'93Now that the excel spreadsheet is saved in the location we need it in, we will run some code to put it in R Studio. The first line of code you see (zoom in on line 9) imports a package that we will use to view excel spreadsheets in R Studio. When you run this line of code, R Studio will import that package into your packages library on the bottom right. Always make sure that the checkmark next to your package is checked so that R Studio can utilize that package\'92s function.\'94\
+{\listtext	6)	}\'93Now that the package is installed, we will import our excel file using the read_excel package. We need to store the file as a variable for referencing purposes later on. In this case we chose to name the variable that stores the file \'93FiberLengthFleeceWeight\'94. The arrow pointing to this variable tells R Studio that we are reading our excel file and storing the data from the file in this variable. We could have also use an equals sign here.\'94\
+{\listtext	7)	}\'93Viewing the information in the excel file within R Studio can be done by using the \'93View\'94 function. This can be accomplished by typing (line 10), which tells R Studio to run the view function on the variable storing the information in our excel spreadsheet.\'94\
+{\listtext	8)	}\'93The summary function will show us some basic statistical information about our data.\'94\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+
+\fs28 Code Chunk 2: Installing Packages\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls3\ilvl0
+\fs24 \cf0 {\listtext	1)	}\'93Next, we will be installing and loading the packages we will need to complete this analysis. Installing a package is similar to adding an extension to Google Chrome. It enhances the functionality and introduces new features to R.\'94\
+{\listtext	2)	}\'93These next three lines of code will install the necessary packages.\'94\
+{\listtext	3)	}\'93In order to use these packages, you must load them into R. The following three lines of code will do that.\'94\
+{\listtext	4)	}\'93The ggplot2 package is going to be used to make graphs, the cowplot package is used for the aesthetic theme of the graph, and UsingR will allow us to run statistical tests.\'94\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\fs28 Code Chunk 3: Checking for Normal Distributions in R\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls4\ilvl0
+\fs24 \cf0 {\listtext	1)	}\'93Now that we have our packages installed and our data loaded into R Studio, we will begin to explore the data. An import aspect of data analysis is making sure that our data meets certain criteria to qualify as being normally distributed.\'94\
+{\listtext	2)	}\'93The first test we will run is a simple exploratory data analysis of the data. This will show us whether the data in our dataset appears normally distributed, and will tell us if we need to make any alterations to the data. To do this we will run (line 24). The code inside of the parentheses tells R Studio to run a simple EDA on the dataset we loaded in and specifically to explore the \'91Fiber length\'92 variable. This is what the $ after the file name indicates.\'94\
+{\listtext	3)	}\'93Our eda does appear normally distributed. Given how small our sample size is, the easiest way to tell is by looking at the Normal Q-Q plot of our data. The data appears to follow the linear trend in this model very well. We will confirm that our dataset is normally distributed using a shapiro test.\'94\
+{\listtext	4)	}\'93Running the shapiro test will give us some statistics about the fiber length variable. What we are looking for is a p-value that is greater than 0.05 to tell if our data is normally distributed. The p-value in this case is 0.3822, which indicates to us that the data is indeed normally distributed.\'94\
+{\listtext	5)	}\'93We will now run the same test on the other variable, fleece weight. The Normal Q-Q plot of this variable appears normally distributed as well. A shapiro test confirms this. The p-value is 0.1833 which is above our level of significance of 0.05.\'94\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+
+\fs28 \cf0 Code Chunk 4: Creating Plots\
+
+\fs24 \'93Now, we will compile the data into a scatterplot. It is best to use a scatterplot to visualize this data, because we have two numerical variables.\'94\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls5\ilvl0\cf0 {\listtext	2)	}\'93This first line of code tells R to plot the data points in the dataset.\'94\
+{\listtext	3)	}\'93The next line tells R which is the dependent and independent variables.\'94\
+{\listtext	4)	}\'93Geom jitter tells R to slightly spread out the points that would normally be overlapping. This does not happen in our data, however it is a good precaution to take.\'94\
+{\listtext	5)	}\'93Theme cowplot is the cowplot package we installed earlier that simply tells R what aesthetic theme to use.\'94\
+{\listtext	6)	}\'93Finally, xlab and ylab label the x and y axes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\sl312\slmult1\pardirnatural\partightenfactor0
+\cf0 \
+
+\fs28 Code Chunk 5: Performing Statistical Tests\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sl312\slmult1\pardirnatural\partightenfactor0
+\ls6\ilvl0
+\fs24 \cf0 {\listtext	1)	}\'93Finally, in order to find the correlation coefficient, we will need to fit a linear regression line to this data.\'94\
+{\listtext	2)	}\'93The first line of code tells R to fit this linear regression. The tilde tells R that fleece weight depends on fiber length, which matches what we have designated as the x and y variables.\'94\
+{\listtext	3)	}\'93Summary(fit) outputs the statistical information. It gives us a variety of data, however we are particularly interested in the Adjusted R-squared. This is our correlation coefficient. As denoted here, our correlation coefficient is 0.9408, which shows that there is a significant linear relationship between fiber length and fleece weight.\'94 }
