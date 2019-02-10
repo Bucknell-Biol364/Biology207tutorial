@@ -18,6 +18,8 @@ library(ggplot2)
 library(cowplot)
 library(UsingR)
 ```
+
+
 ```{r explore data}
 simple.eda(Biol207TutorialDataset$`Fiber length (cm)`)
 shapiro.test(Biol207TutorialDataset$`Fiber length (cm)`)
