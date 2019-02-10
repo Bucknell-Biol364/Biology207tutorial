@@ -8,3 +8,6 @@ To begin the tutorial, complete the following steps:
 3. Download and open the Biology 207 tutorial.Rmd file in RStudio.
 4. Click on the link below to open the video tutorial playlist. There is also a script.txt file that you can use instead of the videos or follow along with.
 5. Follow along with the videos.
+
+# Link to video tutorial:
+https://github.com/Bucknell-Biol364/Biology207tutorial.git
