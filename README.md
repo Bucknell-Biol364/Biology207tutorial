@@ -10,4 +10,4 @@ To begin the tutorial, complete the following steps:
 5. Follow along with the videos.
 
 # Link to video tutorial:
-https://github.com/Bucknell-Biol364/Biology207tutorial.git
+https://youtu.be/1a2Vg82xGgc
