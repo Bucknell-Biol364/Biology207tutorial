@@ -6,18 +6,22 @@ output: html_document
 
 ```{r Importing and Looking at the Data}
 library(readxl)
-FiberLengthFleeceWeight <- read_excel("Biol207TutorialDataset.xlsx")
-View(FiberLengthFleeceWeight)
-summary(FiberLengthFleeceWeight)
+Biol207TutorialDataset <- read_excel("Biol207TutorialDataset.xlsx")
+View(Biol207TutorialDataset)
+summary(Biol207TutorialDataset)
 ```
+
 ```{r install and load packages}
-install.packages("ggplot2", repos='http://cran.us.r-project.org')
-install.packages("cowplot", repos='http://cran.us.r-project.org')
-install.packages("UsingR", repos='http://cran.us.r-project.org')
+
+if (!require("ggplot2")) install.packages("ggplot2", repos='http://cran.us.r-project.org')
+if (!require("cowplot")) install.packages("cowplot", repos='http://cran.us.r-project.org')
+if (!require("UsingR")) install.packages("UsingR", repos='http://cran.us.r-project.org')
 library(ggplot2)
 library(cowplot)
 library(UsingR)
 ```
+
+
 ```{r explore data}
 simple.eda(Biol207TutorialDataset$`Fiber length (cm)`)
 shapiro.test(Biol207TutorialDataset$`Fiber length (cm)`)
