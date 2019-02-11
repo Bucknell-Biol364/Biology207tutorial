@@ -10,10 +10,12 @@ Biol207TutorialDataset <- read_excel("Biol207TutorialDataset.xlsx")
 View(Biol207TutorialDataset)
 summary(Biol207TutorialDataset)
 ```
+
 ```{r install and load packages}
-install.packages("ggplot2", repos='http://cran.us.r-project.org')
-install.packages("cowplot", repos='http://cran.us.r-project.org')
-install.packages("UsingR", repos='http://cran.us.r-project.org')
+
+if (!require("ggplot2")) install.packages("ggplot2", repos='http://cran.us.r-project.org')
+if (!require("cowplot")) install.packages("cowplot", repos='http://cran.us.r-project.org')
+if (!require("UsingR")) install.packages("UsingR", repos='http://cran.us.r-project.org')
 library(ggplot2)
 library(cowplot)
 library(UsingR)
