@@ -34,7 +34,8 @@ shapiro.test(Biol207TutorialDataset$`Fleece weight (kg)`)
 ```{r create scatterplot}
 ggplot(Biol207TutorialDataset) +
   aes(x = as.numeric(Biol207TutorialDataset$`Fiber length (cm)`), y = Biol207TutorialDataset$`Fleece weight (kg)`) +
-  geom_jitter(na.rm=TRUE) +
+  geom_point() +
+  geom_smooth(method='lm',color="black", se=TRUE) +
   theme_cowplot() +
   xlab("Fiber Length (cm)") + 
   ylab("Fleece Weight (kg)")
