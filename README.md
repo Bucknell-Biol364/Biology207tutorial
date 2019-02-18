@@ -10,4 +10,4 @@ To begin the tutorial, complete the following steps:
 5. Follow along with the videos.
 
 # Link to video tutorial:
-https://youtu.be/pLPMuascMs8
+https://youtu.be/dxrElhRbU18
